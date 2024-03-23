@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+
+{% block page_title %}<title>Shopping</title>{% endblock %}
+
+{% block page_content %}
+    <header class="mb-auto">
+        <div>
+          <h3 class="float-md-start p-2 mb-0 text-shadowing">Boyd's & Bole's</h3>
+          <nav class="nav nav-masthead justify-content-center float-md-end text-shadowing">
+            <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Contact</a>
+            <i class="fa-solid fa-cart-shopping fa-2x"></i>
+          </nav>
+        </div>
+    </header>
+
+    <section style="padding: 20px;" class="categories mb-3">
+        <h3>Browse the merchandis</h3>
+        <div class="container category-collage">
+            <div class="row">
+                <div class="col-md-4">
+                    <img class="category-image" src="https://imagizer.imageshack.com/img923/4881/Q6SrrB.png">
+                </div>
+                <div class="col-md-4">
+                    <img class="category-image" src="https://imagizer.imageshack.com/img923/1404/hZIBS2.png">
+                </div>
+                <div class="col-md-4">
+                    <img class="category-image" src="https://imagizer.imageshack.com/img922/4443/30sSQ1.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-products bg-light pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>New Producst</h3>
+                </div>
+                <div class="col-md-6">
+                    <div class="inline">
+                        <a href="#" class="btn btn-sm btn-secondary m-2">Sort</a>
+                        <a href="#" class="btn btn-sm btn-secondary m-2">Filter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mt-4 mb-5">
+            <div class="col-md-3 border-right">
+                <a href="#"><p style="font-weight: 400;" class="text-dark uppercase">Water Pipes</p></a>
+                <a href="#"><p style="font-weight: 400;" class="text-dark uppercase">Personal Use</p></a>
+                <a href="#"><p style="font-weight: 400;" class="text-dark uppercase">Hide-aways</p></a>
+                <a href="#"><p style="font-weight: 400;" class="text-dark uppercase">Mini Masterpieces</p></a>
+            </div>
+            <div class="col-md-9">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="card">
+                                <div class="card-img-top">
+                                    <img class="product-image" src="https://cdn.shopify.com/s/files/1/1008/6090/files/14_Joe3_004_9def1393-9be9-4055-8901-79d973779c82.jpg?v=1510200596">
+                                </div>
+                                <h6><a href="#"></a>Product Name</h6>
+                                <p><small>$ 29.95</small></p>
+                                <a href="#" class="btn btn-sm btn-outline-warning fw-bold shadow">Add to cart</a>
+                                <a href="#" class="btn btn-sm btn-outline-warning fw-bold shadow">Details</a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-2">
+                            <div class="card">
+                                <div class="card-img-top">
+                                    <img class="product-image" src="https://cdnc.lystit.com/photos/2013/11/11/asos-midblue-bellfield-denim-jacket-with-tapestry-details-product-4-14803494-200318916_large_flex.jpeg">
+                                </div>
+                                <h6><a href="#"></a>Product Name</h6>
+                                <p><small>$ 29.95</small></p>
+                                <a href="#" class="btn btn-sm btn-outline-warning fw-bold shadow">Add to cart</a>
+                                <a href="#" class="btn btn-sm btn-outline-warning fw-bold shadow">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+            </div>
+        </div>
+        
+    </section>
+
+{% endblock %}

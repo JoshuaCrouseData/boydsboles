@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_title %}<title>Hello, world!</title>{% endblock %}
+
+{% block page_content %}
+    
+    <main class="mt-auto hero-section">
+        <h1>Experience Purity</h1>
+        <p class="lead uppercase animation-from-right text-white text-shadowing">Unique designs. Engineered perfection.</p>
+        <p class="lead inline animation-from-bottom">
+          <a href="{% url 'shopping_home' %}" class="btn btn-lg btn-outline-secondary fw-bold wave-button shadow">Shop</a>
+          <a href="#" class="btn btn-lg btn-outline-secondary fw-bold wave-button shadow">Wholesale</a>
+        </p>
+    </main>
+    
+{% endblock %}
